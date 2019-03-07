@@ -5,8 +5,9 @@ def run_guessing_game
   answer_list = [*1..6].map{|e| e.to_s}
   puts "Guess a number between 1 and 6."
   while
-    command = gets.chomp
+
     random_answer = Random.rand(1..6).to_s
+    command = gets.chomp
     case
       when command == "exit"
         puts "Goodbye!"
