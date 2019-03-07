@@ -12,7 +12,7 @@ def run_guessing_game
         puts "Goodbye!"
         break
       when answer_list.include?(command)
-        if command == random_answer.to_s
+        if command == random_answer
           puts "You guessed the correct number!"
         else
           puts "The computer guessed #{random_answer}."
